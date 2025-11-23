@@ -1,8 +1,32 @@
 .hero {
-  background-image:url('../IMG/homewelcome.jpg') ,linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-image:linear-gradient(rgba(11, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../IMG/homewelcome.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.service-card {
+  border-radius: 15px;
+  background: white;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-card a:hover {
+  color: #198754;
 }
 
