@@ -86,7 +86,15 @@ const tips=[
     "Latih pernapasan dalam",
     "Bersosialisasilah dengan orang terdekat",
     "Jangan pendam emosi negatif",
-
+    "Laugh more and stress less",
+    "Perbanyak senyum",
+    "Jaga pikiran tetap positif",
+    "Jangan membandingkan diri dengan orang lain",
+    "Bersyukur setiap hari",
+    "Percaya diri",
+    "Ciptakan lingkungan sehat",
+    "Jaga hubungan sosial yang baik",
+    "Bergerak lebih banyak daripada duduk",
 ];
 
 function generateTip(){
