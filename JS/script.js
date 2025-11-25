@@ -4,6 +4,7 @@ const tips=[
     "Konsumsi buah dan sayur setiap hari",
     "Hindari begadang tanpa alasan penting",
     "Kurangi makanan cepat saji",
+    "test"
 ];
 
 function generateTip(){
