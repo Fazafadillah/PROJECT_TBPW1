@@ -36,6 +36,9 @@
               <a class="nav-link" href="#kesehatan">Article</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#bmi">BMI</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -80,14 +83,23 @@
       <div class="container text-center">
         <h2 class="fw-bold mb-5">Layanan Kami</h2>
 
-        <div class="row g-4">
-          <div class="col-md-12">
-            <div class="service-card p-4 shadow">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 d-flex">
+            <div class="service-card p-4 shadow w-100">
               <a href="#kesehatan">
                 <h5>Artikel Kesehatan</h5>
                 <p>
                   Konten edukatif seputar fisik dan mental health yang valid.
                 </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card p-4 shadow w-100">
+              <a href="#bmi">
+                <h5>Cek BMI</h5>
+                <p>Kalkulator BMI untuk mengetahui status berat badan kamu.</p>
               </a>
             </div>
           </div>
@@ -304,6 +316,39 @@
                 melakukan meditasi.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bmi" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Kalkulator BMI</h2>
+        <p>
+          Masukkan tinggi badan dan berat badan kamu untuk mengetahui status
+          BMI.
+        </p>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6">
+            <input
+              type="number"
+              id="weight"
+              class="form-control mb-3"
+              placeholder="Berat badan (kg)"
+            />
+            <input
+              type="number"
+              id="height"
+              class="form-control mb-3"
+              placeholder="Tinggi badan (cm)"
+            />
+
+            <button class="btn btn-success w-100" onclick="calculateBMI()">
+              Hitung BMI
+            </button>
+
+            <div id="bmiResult" class="mt-4 fs-5 fw-bold"></div>
           </div>
         </div>
       </div>

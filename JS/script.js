@@ -102,3 +102,31 @@ function generateTip() {
   document.getElementById("dailyTip").innerText = tips[random];
 }
 window.onload = generateTip;
+
+function calculateBMI() {
+  const weight = document.getElementById("weight").value;
+  const height = document.getElementById("height").value;
+
+  if (weight === "" || height === "") {
+    document.getElementById("bmiResult").innerText =
+      "Silakan isi tinggi dan berat badan terlebih dahulu.";
+    return;
+  }
+
+  const heightM = height / 100;
+  const bmi = weight / (heightM * heightM);
+  let status = "";
+
+  if (bmi < 18.5) {
+    status = "Kurus";
+  } else if (bmi >= 18.5 && bmi <= 24.9) {
+    status = "Normal";
+  } else if (bmi >= 25 && bmi <= 29.9) {
+    status = "Overweight";
+  } else {
+    status = "Obesitas";
+  }
+
+  document.getElementById("bmiResult").innerText =
+    "BMI kamu: " + bmi.toFixed(1) + " (" + status + ")";
+}
